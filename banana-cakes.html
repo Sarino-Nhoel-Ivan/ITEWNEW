@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Cakes | Ihurno Cookies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Cookies.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark sticky-top py-2">
+            <div class="container d-flex align-items-center">
+                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex align-items-center mx-auto" href="index.html">
+                    <img src="img/Cookies.jpg" alt="Ihurno Cookies Logo" class="me-2"> 
+                    Ihurno Cookies
+                </a>
+                <div class="navbar-actions d-flex align-items-center">
+                    <a href="cart.html" class="nav-link px-2 d-none d-md-inline" aria-label="Shopping Cart">
+                        <i class="bi bi-cart me-1"></i> Cart
+                    </a>
+                    <a href="cart.html" class="nav-link px-2 d-inline d-md-none" aria-label="Shopping Cart">
+                        <i class="bi bi-cart-fill fs-5 align-middle"></i>
+                    </a>
+                    <a href="checkout.html" class="nav-link ps-2 pe-1 d-none d-md-inline" aria-label="Checkout">
+                        <i class="bi bi-bag-check me-1"></i> Checkout
+                    </a>
+                    <a href="checkout.html" class="nav-link ps-2 pe-1 d-inline d-md-none" aria-label="Checkout">
+                        <i class="bi bi-bag-check-fill fs-5 align-middle"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header border-bottom"> 
+                <h5 class="offcanvas-title d-flex align-items-center" id="offcanvasNavbarLabel">
+                    <img src="img/Cookies.jpg" alt="Ihurno Cookies Logo" class="me-2">
+                    Menu
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill me-2"></i>Home</a></li>
+                    <li class="nav-item"><hr class="my-2 offcanvas-divider"></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html"><i class="bi bi-shop me-2"></i>All Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cookies.html"><i class="bi bi-record-circle-fill me-2"></i>Cookies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bento-cakes.html"><i class="bi bi-box-seam-fill me-2"></i>Bento Cakes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cakes.html"><i class="bi bi-cake2-fill me-2"></i>Cakes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cupcakes.html"><i class="bi bi-heart-fill me-2"></i>Cupcakes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="banana-cakes.html"><i class="bi bi-basket-fill me-2"></i>Banana Cakes</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>Banana Cakes</h1>
+            <p>Soft, moist, and made with real bananas — baked fresh daily!</p>
+            <a href="#banana-cakes" class="btn btn-primary">View Selection</a>
+        </div>
+    </div>
+
+    <main class="container py-5" id="banana-cakes">
+        <section>
+            <h2 class="text-center mb-4">Our Banana Cakes</h2>
+            <p class="text-center mb-5">Each banana cake is carefully crafted with premium ingredients and fresh ripe bananas.</p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/bananacake1.jpg" class="card-img-top" alt="Classic Banana Cake">
+                        <div class="card-body">
+                            <h3 class="card-title">Both flavor Banana Cakes</h3>
+                            <p class="card-text">A timeless favorite with a golden crust and banana-rich flavor.</p>
+                            <p class="card-text fw-bold">₱450.00</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100" onclick="addToCart('Classic Banana Cake', 280, 'https://i.pinimg.com/736x/6b/b0/f7/6bb0f7f1f2e42322c72872ee0474e9f8.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <span class="badge-featured">Best Seller</span>
+                        <img src="img/Bananacake2.jpg" class="card-img-top" alt="Banana Walnut & Choco Cake">
+                        <div class="card-body">
+                            <h3 class="card-title">Banana Walnut & Choco Cake</h3>
+                            <p class="card-text">Topped with chopped walnuts for the perfect crunch.</p>
+                            <p class="card-text fw-bold">₱250.00</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100" onclick="addToCart('Banana Walnut Cake', 320, 'https://i.pinimg.com/736x/f3/36/f5/f336f57cdd8dc50bd8a59bc9186ffcf2.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/bananacake3.jpg" class="card-img-top" alt="Choco-Banana Cake">
+                        <div class="card-body">
+                            <h3 class="card-title">Choco-Banana Cake</h3>
+                            <p class="card-text">A decadent twist with banana and chocolate chips.</p>
+                            <p class="card-text fw-bold">₱280.00</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100" onclick="addToCart('Choco-Banana Cake', 350, 'https://i.pinimg.com/736x/2b/91/52/2b9152705b4c95bde04f49d962d66d8f.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-auto py-4">
+        <div class="container text-center">
+            <div class="social-icons-container">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Ihurno Cookies Facebook Page">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Ihurno Cookies Instagram Profile">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Ihurno Cookies Twitter Profile">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </div>
+
+            <nav class="nav footer-nav justify-content-center mb-3">
+                <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                <a class="nav-link" href="terms.html">Terms & Conditions</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </nav>
+
+            <span class="text-muted">© 2025 Ihurno Cookies. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Function to add a product to the cart
+        function addToCart(name, price, image) {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ name, price, image });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${name} has been added to your cart!`);
+        }
+    </script>
+</body>
+</html>
